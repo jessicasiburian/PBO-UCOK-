@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="443.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="beranda.BerandaController">
+   <children>
+      <TableView fx:id="tabel" layoutX="-1.0" layoutY="31.0" prefHeight="200.0" prefWidth="620.0">
+        <columns>
+          <TableColumn fx:id="tpositif" prefWidth="161.60003662109375" text="Positif" />
+          <TableColumn fx:id="tsembuh" prefWidth="122.39996337890625" text="Sembuh" />
+            <TableColumn fx:id="tmeninggal" prefWidth="118.39996337890625" text="Meninggal" />
+            <TableColumn fx:id="ttanggal" prefWidth="213.60000610351562" text="Tanggal Buat" />
+        </columns>
+      </TableView>
+      <TextField fx:id="fpositif" layoutX="417.0" layoutY="266.0" prefHeight="24.0" prefWidth="176.0" />
+      <TextField fx:id="fsembuh" layoutX="417.0" layoutY="298.0" prefHeight="24.0" prefWidth="176.0" />
+      <TextField fx:id="fmeninggal" layoutX="417.0" layoutY="333.0" prefHeight="24.0" prefWidth="176.0" />
+      <Button fx:id="tambah" layoutX="493.0" layoutY="374.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="102.0" text="Tambah" />
+      <Button fx:id="edit" layoutX="417.0" layoutY="374.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="64.0" text="Edit" />
+      <Button fx:id="hapus" layoutX="316.0" layoutY="374.0" mnemonicParsing="false" text="Hapus" />
+      <Text layoutX="417.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Form Tambah/Edit" wrappingWidth="139.9999999999999">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="344.0" layoutY="314.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sembuh" />
+      <Text layoutX="346.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Positif" />
+      <Text layoutX="345.0" layoutY="349.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Meninggal" />
+      <MenuBar layoutX="-1.0" layoutY="2.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Menu">
+            <items>
+              <MenuItem fx:id="rumahsakit" mnemonicParsing="false" text="Rumah sakit" />
+                  <MenuItem fx:id="dampak" mnemonicParsing="false" text="Dampak" />
+                  <MenuItem fx:id="gejala" mnemonicParsing="false" text="Gejala Terinfeksi" />
+                  <MenuItem fx:id="latar" mnemonicParsing="false" text="Latar Belakang" />
+                  <MenuItem fx:id="handsanitizer" mnemonicParsing="false" text="Handsanitizer" />
+                  <MenuItem fx:id="penanganan" mnemonicParsing="false" text="Penanganan" />
+                  <MenuItem fx:id="penanganan1" mnemonicParsing="false" text="Pencegahan" />
+                  <MenuItem fx:id="penanganan2" mnemonicParsing="false" text="Penyebab" />
+                  <MenuItem fx:id="penanganan21" mnemonicParsing="false" text="Cara Penyebaran" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

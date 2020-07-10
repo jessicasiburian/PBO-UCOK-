@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 8, 2020 10:03:21 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="enitity.Informasikasuscovid" table="informasikasuscovid" catalog="prooosd" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="positif" type="int">
+            <column name="positif" not-null="true" />
+        </property>
+        <property name="sembuh" type="int">
+            <column name="sembuh" not-null="true" />
+        </property>
+        <property name="meningal" type="int">
+            <column name="meningal" not-null="true" />
+        </property>
+        <property name="tanggalBuat" type="timestamp">
+            <column name="tanggal_buat" length="19" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
